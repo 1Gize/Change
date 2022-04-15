@@ -1,15 +1,15 @@
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
-
+import Change._
 class ChangeSpec extends AnyFlatSpec with should.Matchers{
-  def change(x: Int)={
-    x match {
-      case 0 => 0
-      case 12 => 3
-      case 468 => 11
-      case 123456 => 254
-    }
-  }
+//  def change(x: Int)={
+//    x match {
+//      case 0 => 0
+//      case 12 => 3
+//      case 468 => 11
+//      case 123456 => 254
+//    }
+//  }
   "change " should "return 0 for input 0" in {
     change(0) shouldBe 0
   }
